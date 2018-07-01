@@ -27,10 +27,11 @@ if (function_exists('add_theme_support'))
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
-    add_image_size('large', 700, '', true); // Large Thumbnail
-    add_image_size('medium', 250, '', true); // Medium Thumbnail
-    add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('mediano', 350, 250, true); // Mediano Thumbnail
+  //  add_image_size('large', 700, '', true); // Large Thumbnail    
+   // add_image_size('medium', 250, '', true); // Medium Thumbnail
+    //add_image_size('small', 120, '', true); // Small Thumbnail
+    //add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -400,35 +401,34 @@ function create_post_type_html5()
 {
     register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
+    register_post_type('proyectos', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
+            'name' => __('Proyectos', 'html5blank'), // Rename these to suit
+            'singular_name' => __('Proyectos', 'html5blank'),
             'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
+            'add_new_item' => __('Add New Proyectos', 'html5blank'),
             'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'edit_item' => __('Edit Proyectos', 'html5blank'),
+            'new_item' => __('New Proyectos', 'html5blank'),
+            'view' => __('View Proyectos', 'html5blank'),
+            'view_item' => __('View Proyectos', 'html5blank'),
+            'search_items' => __('Search Proyectos', 'html5blank'),
+            'not_found' => __('No se encontraron proyectos', 'html5blank'),
+            'not_found_in_trash' => __('No Proyectos found in Trash', 'html5blank')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
         'has_archive' => true,
+        'menu-position'=>6,
         'supports' => array(
             'title',
-            'editor',
-            'excerpt',
+            'editor',           
             'thumbnail'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
-            'post_tag',
-            'category'
+          
         ) // Add Category and Post Tags support
     ));
 }
