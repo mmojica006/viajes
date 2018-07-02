@@ -28,6 +28,7 @@ if (function_exists('add_theme_support'))
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
     add_image_size('mediano', 350, 250, true); // Mediano Thumbnail
+    add_image_size('proyectosDestacados', 523, 294, true); //proyectos destacaddos
   //  add_image_size('large', 700, '', true); // Large Thumbnail    
    // add_image_size('medium', 250, '', true); // Medium Thumbnail
     //add_image_size('small', 120, '', true); // Small Thumbnail

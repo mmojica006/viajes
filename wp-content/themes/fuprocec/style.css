@@ -90,6 +90,9 @@ input:focus {
 	width: 33.3%;
 
 }
+.grid2-4{
+	width: 50%;
+}
 
 
 
@@ -247,7 +250,26 @@ height: auto;
 
 
 }
+/*proyectos*/
+.imagen-destacada{
+	position: relative;
 
+}
+
+.imagen-destacada .mas-info{
+	position: absolute;
+	top: 19px;
+	right: -13px;
+}
+.fecha-creacion p{
+	float: left;
+	width: 50%;
+}
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #d4771e;
+}
 
 
 /*------------------------------------*\

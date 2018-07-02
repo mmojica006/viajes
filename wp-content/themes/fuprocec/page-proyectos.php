@@ -1,6 +1,6 @@
 
-<?php 
-/* 
+<?php
+/*
 Template Name: Proyectos
 */
 
@@ -16,27 +16,54 @@ get_header(); ?>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
+			<?php
+			$args = array(
+				'post_type'=>'proyectos',
+				'posts_per_page'=>4,
+				'order'=>'ASC',
+				'orderby'=>'title'
+
+			)
+			?>
+
+			<?php $proyectos = new WP_Query($args);?>
+			<?php while ($proyectos->have_posts()): $proyectos->the_post(); ?>
+
+
 			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class('grid2-3'); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class('grid2-4'); ?>>
+
+				<div class="imagen-destacada">
+					<a class="mas-info" href="<?php the_permalink();?>">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masinfo.png" alt="">
+					</a>
+				</div> <!-- imagen destacada -->
+
+			<?php the_post_thumbnail('proyectosDestacados'); ?>
+
+				<a href="<?php the_permalink();?>">
+				<h2><?php the_title(); ?></h2>
+				</a>
+
+				<?php
+				$formato = 'd,F,Y';
+				$fecha = strtotime(get_field('fecha_del_proyecto'));
+				$fechaSalida = date_i18n($formato,$fecha);
+				?>
+
+				<div class="fecha-creacion">
+					<p class="fecha"><?php echo $fechaSalida; ?></p>
+				</div>
 
 
 
-				<?php the_content(); ?>
-
-				<?php //comments_template( '', true ); // Remove if you don't want comments ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
-	
 
 			</article>
 			<!-- /article -->
 
-			
-			
-			</div>	
+			<?php endwhile; wp_reset_postdata(); ?>
+
+			</div>
 
 		<?php endwhile; ?>
 
