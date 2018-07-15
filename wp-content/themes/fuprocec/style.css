@@ -170,7 +170,7 @@ input:focus {
 	text-transform: uppercase;
 }
 /* contenido */
-main {
+.page main {
 	margin-top: 250px;
 }
 
@@ -271,6 +271,25 @@ h2 {
 	color: #d4771e;
 }
 
+/*single proyectos*/
+.informacion-proyecto{
+    background-color: rgba(0,0,0,.13);
+    border: 1px solid #c0c0c0 ;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.informacion-proyecto p{
+    font-weight: bold;
+}
+.informacion-proyecto span{
+    font-weight: normal;
+}
+h2.descripcionLarga{
+    text-align: center;
+    font-size: 28px;
+
+}
 
 /*------------------------------------*\
     IMAGES
