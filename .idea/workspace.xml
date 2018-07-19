@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e180e028-0b0f-43bf-937f-3dc723c28092" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/fuprocec/single-proyectos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fuprocec/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/fuprocec/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/fuprocec/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/fuprocec/style.css" />
-    </list>
+    <list default="true" id="e180e028-0b0f-43bf-937f-3dc723c28092" name="Default" comment="" />
     <ignored path="viajes.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -305,12 +300,12 @@
       <option name="presentableId" value="Default" />
       <updated>1530491458825</updated>
       <workItem from="1530491460381" duration="5422000" />
-      <workItem from="1531612381073" duration="3331000" />
+      <workItem from="1531612381073" duration="3625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8753000" />
+    <option name="totallyTimeSpent" value="9047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
